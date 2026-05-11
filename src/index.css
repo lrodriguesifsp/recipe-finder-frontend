@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-nunito: "Nunito", sans-serif;
+  --font-nunito-sans: "Nunito Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-nunito-sans);
+    @apply bg-orange-50 text-teal-950;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-nunito);
+  }
+}
